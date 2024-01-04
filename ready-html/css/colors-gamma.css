@@ -1,0 +1,14 @@
+.colors-gamma-main {
+	text-align: center;
+	color: var(--context);
+	font-size: calc(var(--index) * 0.95);
+	margin-top: calc(var(--index) * 1.75);
+}
+
+.dot {
+	height: 50px;
+	width: 50px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}

@@ -1,0 +1,15 @@
+#timer {
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: calc(var(--index) * 2.15);
+	letter-spacing: calc(var(--index) / 2.25);
+	font-weight: 900;
+	color: var(--timer);
+	text-shadow: 0 0 2px #0c0c08;
+	font-family: raleway_f, sans-serif;
+}
+
+.timer-container span {
+	white-space: nowrap;
+}
+

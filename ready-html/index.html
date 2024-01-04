@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/timing.css">
+    <link rel="stylesheet" href="css/timer.css">
+    <link rel="stylesheet" href="css/colors-gamma.css">
+
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+    <script src="js/app.js" defer></script>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="content">
+
+        <header class="main-header">
+            <div class="layers">
+                <div class="layer__header">
+                    <div class="layers__caption">WELCOME TO KRUGLIKS WEDDING</div>
+                    <div class="layers__title">Alexey & Angelina</div>
+                    <div class="layers__footer">02 June 2024</div>
+                </div>
+                <div class="layer layers__base" style="background-image: url(img/main5.jpg);"></div>
+            </div>
+        </header>
+
+        <article class="timing-article">
+            <div class="main-article__content">
+				<div class="timing__header">
+                    <div id="guest"></div>
+                </div>
+                <div class="timing-main">
+                    Мы очень хотим оказаться в окружении самых близких и дорогих для нас людей.
+                    <br/>
+                    С огромным удовольствием приглашаем Вас разделить с нами этот волнующий праздник - нашу свадьбу!
+                </div>
+
+                <ul class="timing">
+                    <li>
+                        <div class="timing-body">
+                            <b>Arrival & mingling</b>
+                            <br/>
+                            Join us at the venue and get ready to mingle!
+							<br/>
+                            Catch up with old friends, meet new ones, and share in the joyous atmosphere of our party.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timing-body">
+                            <b>Toasts & feasting</b>
+                            <br/>
+                            Get ready for a toast-filled celebration!
+                            <br/>
+                            Gather around as we raise our glasses to love.
+                            <br/>
+							Afterward, indulge in a tasty feast, savoring a variety of mouthwatering dishes.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timing-body">
+                            <b>Dance & laughter</b>
+                            <br/>
+                            Here's the time to let loose and hit the dance floor!
+							<br/>
+                            The DJ will spin an eclectic mix of tunes, guaranteed to keep you grooving all night long.
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="colors-gamma-main">
+                    <b>Желательная цветовая гамма мероприятия:</b>
+                </div>
+
+                <div style="text-align:center; margin-bottom: calc(var(--index) * 1.75);">
+                    <h1>Round Dots / Circles</h1>
+                    <span class="dot" style="background-color: #fbf1e8"></span>
+                    <span class="dot" style="background-color: #eee1b7"></span>
+                    <span class="dot" style="background-color: #ffffff"></span>
+                    <span class="dot" style="background-color: #c0c1c3"></span>
+                </div>
+            </div>
+        </article>
+
+        <article class="main-article" style="background-image: url(img/main4.png);">
+            <div style="min-height: 50vh; height: 50%; align-items: center">
+                <section id="timer">
+                    <div>До Встречи Через</div>
+                    <div>
+                        <span id="days" role="timer">0 : </span>
+                        <span id="hours" role="timer">0 : </span>
+                        <span id="minutes" role="timer">0 : </span>
+                        <span id="seconds" role="timer">0</span>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+
+    </div>
+</div>
+
+</body>
+</html>
