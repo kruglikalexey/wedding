@@ -18,6 +18,7 @@
     <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
 
     <script src="js/app.js" defer></script>
+    <script src="js/timer.js" defer></script>
 
 </head>
 <body>
@@ -94,20 +95,52 @@
         </article>
 
         <article class="main-article" style="background-image: url(img/main4.png);">
-            <div style="min-height: 50vh; height: 50%; align-items: center">
+            <div style="min-height: 75vh; height: 50%; align-items: center">
                 <section id="timer">
                     <div>До Встречи Через</div>
                     <div>
-                        <span id="days" role="timer">0 : </span>
-                        <span id="hours" role="timer">0 : </span>
-                        <span id="minutes" role="timer">0 : </span>
-                        <span id="seconds" role="timer">0</span>
+                        <table>
+                            <tr>
+                                <td>
+                                    <span id="days" role="timer">0</span>
+                                </td>
+                                <td> : </td>
+                                <td>
+                                    <span id="hours" role="timer">0</span>
+                                </td>
+                                <td> : </td>
+                                <td>
+                                    <span id="minutes" role="timer">0</span>
+                                </td>
+                                <td> : </td>
+                                <td>
+                                    <span id="seconds" role="timer">0</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="days_caption" class="timer_caption"> Дней </span>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <span id="hours_caption" class="timer_caption"> Часов </span>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <span id="minutes_caption" class="timer_caption"> Минут </span>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <span id="seconds_caption" class="timer_caption"> Секунд </span>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </section>
             </div>
+
+            <p class="copyright"> &copy Дополнительную информацию ожидайте на сайте</p>
         </article>
-
-
     </div>
 </div>
 

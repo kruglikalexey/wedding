@@ -9,7 +9,7 @@
 	--text_paragraph: #0c0c08;
 	--context: #9d7d2b;
 	--timer: #eeddb7;
-	--transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+	--transition: transform 1.0s cubic-bezier(.075, .5, 0, 1);
 }
 @font-face {
 	font-family: raleway_f;
@@ -58,18 +58,13 @@ body {
 	background-position: center;
 	will-change: transform;
 	z-index: 2;
-	transition: var(--transition);
+	/*transition: var(--transition);*/
 	/*border-radius: 20px;*/
 }
 .layers__base {
-	transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+	transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
+	transition: var(--transition);
 	z-index: 0;
-}
-.layers__middle {
-	transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
-}
-.layers__front {
-	transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
 }
 .layer__header {
 	z-index: 1;
@@ -135,10 +130,17 @@ body {
 .content {
 	will-change: transform;
 }
-.copy {
+footer {
+	height: 300px;
+	width: 100%;
+}
+p.copyright {
+	width: 100%;
+	margin-bottom: 20px;
+	font-weight: 900;
+	text-align: center;
+	color: var(--context);
+	font-size: calc(var(--index) * 1.0);
 	position: absolute;
-	bottom: calc(var(--index) * 2.5);
-	opacity: .45;
-	font-size: calc(var(--index) * .75);
-	letter-spacing: calc(var(--index) / 37.5);
+	bottom:0;
 }
