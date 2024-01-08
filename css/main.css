@@ -58,7 +58,7 @@ body {
 	background-position: center;
 	will-change: transform;
 	z-index: 2;
-	/*transition: var(--transition);*/
+	transition: var(--transition);
 	/*border-radius: 20px;*/
 }
 .layers__base {
