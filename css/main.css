@@ -10,6 +10,7 @@
 	--context: #9d7d2b;
 	--timer: #eeddb7;
 	--transition: transform 1.0s cubic-bezier(.075, .5, 0, 1);
+	--webkit-transition: -webkit-transform 1.0s cubic-bezier(.075, .5, 0, 1);
 }
 @font-face {
 	font-family: raleway_f;
@@ -65,7 +66,7 @@ body {
 	transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
 	-webkit-transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
 	transition: var(--transition);
-	-webkit-transition: var(--transition);
+	-webkit-transition: var(--webkit-transition);
 	z-index: 0;
 }
 .layer__header {
@@ -73,7 +74,7 @@ body {
 	transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
 	-webkit-transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
 	transition: var(--transition);
-	-webkit-transition: var(--transition);
+	-webkit-transition: var(--webkit-transition);
 	will-change: transform;
 	font-weight: 900;
 	color: var(--text);
@@ -121,7 +122,7 @@ body {
 	transform: var(--main-article-transform);
 	-webkit-transform: var(--main-article-transform);
 	transition: var(--transition);
-	-webkit-transition: var(--transition);
+	-webkit-transition: var(--webkit-transition);
 	will-change: transform;
 }
 .main-article__paragraph {
@@ -132,7 +133,7 @@ body {
 	transform: var(--main-article-transform);
 	-webkit-transform: var(--main-article-transform);
 	transition: var(--transition);
-	-webkit-transition: var(--transition);
+	-webkit-transition: var(--webkit-transition);
 	will-change: transform;
 }
 .content {
