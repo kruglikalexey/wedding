@@ -37,7 +37,7 @@ const startCountdown = () => {
     minutesElem.innerHTML = `${minutes} `;
     minutesElemCaption.innerHTML = formatTime(minutes, ['Минута', 'Минуты', 'Минут']);
     secondsElem.innerHTML = `${seconds} `;
-    secondsElemCaption.innerHTML = formatTime(minutes, ['Секунда', 'Секунды', 'Секунд']);
+    secondsElemCaption.innerHTML = formatTime(seconds, ['Секунда', 'Секунды', 'Секунд']);
 };
 
 const endCountdown = () => {
@@ -48,7 +48,6 @@ const endCountdown = () => {
 startCountdown();
 timerInterval = setInterval(startCountdown, 1000);
 
-function formatTime(number, titles) {
-    const cases = [2, 0, 1, 1, 1, 2];
-    return `${titles[number % 100 > 4 && number % 100 < 20 ? 2 : cases[number % 10 < 5 ? number % 10 : 5]]}`;
+function formatTime(n, titles) {
+    return titles[n % 10 === 1 && n % 100 !== 11 ? 0 : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20) ? 1 : 2];
 }
