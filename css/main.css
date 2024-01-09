@@ -36,6 +36,8 @@ body {
 	height: calc(var(--index) * 10);
 	/*background-image: url(../img/ground.png);*/
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	bottom: calc(var(--index) * -4.5);
