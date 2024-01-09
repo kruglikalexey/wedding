@@ -21,7 +21,7 @@ var timeout = null;
 window.addEventListener('scroll', e => {
 	clearTimeout(timeout);
 	timeout = setTimeout(function() {
-		// alert('scrolling stopped');
+		console.log('scrolling stopped');
 		document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`)
 	}, delay);
 })
