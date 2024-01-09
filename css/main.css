@@ -10,7 +10,6 @@
 	--context: #9d7d2b;
 	--timer: #eeddb7;
 	/*--transition: transform 0.5s cubic-bezier(.1, .1, 0, 1);*/
-	--webkit-transition: -webkit-transform 0.3s cubic-bezier(.1, .3, 0, 1);
 }
 @font-face {
 	font-family: raleway_f;
@@ -72,7 +71,7 @@ body {
 	/*transform: translate3d(0, calc(var(--scrollTop) / 2), 0);*/
 	-webkit-transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
 	/*transition: var(--transition);*/
-	/*-webkit-transition: var(--webkit-transition);*/
+	-webkit-transition: -webkit-transform 0.3s cubic-bezier(.1, .3, 0, 1);
 	will-change: transform;
 	font-weight: 900;
 	color: var(--text);
