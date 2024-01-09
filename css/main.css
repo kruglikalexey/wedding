@@ -10,7 +10,7 @@
 	--context: #9d7d2b;
 	--timer: #eeddb7;
 	/*--transition: transform 0.5s cubic-bezier(.1, .1, 0, 1);*/
-	--webkit-transition: -webkit-transform 0.5s cubic-bezier(.1, .1, 0, 1);
+	--webkit-transition: -webkit-transform 1.0s cubic-bezier(.1, .5, 0, 1);
 }
 @font-face {
 	font-family: raleway_f;
