@@ -63,7 +63,9 @@ body {
 .layer__header {
 	z-index: 1;
 	transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+	-webkit-transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
 	transition: transform 2.0s cubic-bezier(.1, .1, 0, 1);
+	-webkit-transition: -webkit-transform 2.0s cubic-bezier(.1, .1, 0, 1);
 	will-change: transform;
 	font-weight: 900;
 	color: var(--text);
