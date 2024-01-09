@@ -16,14 +16,21 @@ window.addEventListener("load", () => {
 	}
 });
 
-var delay = 100;
+var prevScrolled = 0
+var delay = 10;
 var timeout = null;
 window.addEventListener('scroll', e => {
-	clearTimeout(timeout);
-	timeout = setTimeout(function() {
-		console.log('scrolling stopped');
+	if (Math.abs(prevScrolled - this.scrollY) > 50 || scrollY === 0) {
+		clearTimeout(timeout);
 		document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`)
-	}, delay);
+		prevScrolled = scrollY
+	} else {
+		clearTimeout(timeout);
+		timeout = setTimeout(function () {
+			document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`)
+		}, delay);
+	}
+
 })
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
