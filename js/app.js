@@ -16,13 +16,8 @@ window.addEventListener("load", () => {
 	}
 });
 
-
-var prevScroll = 0;
-window.addEventListener('scroll', e => {
-	if (Math.abs(prevScroll - this.scrollY) > 50 || this.scrollY === 0) {
+window.addEventListener('scrollend', e => {
 		document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`) // Update method
-		prevScroll = scrollY
-	}
 })
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 ScrollSmoother.create({
