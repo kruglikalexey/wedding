@@ -17,16 +17,18 @@ window.addEventListener("load", () => {
 });
 
 var prevScrolled = 0
-var delay = 10;
+var delay = 20;
 var timeout = null;
 window.addEventListener('scroll', e => {
 	if (Math.abs(prevScrolled - this.scrollY) > 50 || scrollY === 0) {
 		clearTimeout(timeout);
+		console.log("scrolling")
 		document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`)
 		prevScrolled = scrollY
 	} else {
 		clearTimeout(timeout);
 		timeout = setTimeout(function () {
+			console.log('scrolling stopped');
 			document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`)
 		}, delay);
 	}
