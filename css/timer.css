@@ -11,6 +11,7 @@
 	font-size: calc(var(--index) * 0.55);
 	/*letter-spacing: calc(var(--index) / 0.95);*/
 	font-weight: 900;
+	width: 30px;
 	color: var(--timer);
 	text-shadow: 0 0 2px #0c0c08;
 	font-family: raleway_f, sans-serif;

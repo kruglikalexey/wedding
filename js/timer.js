@@ -1,5 +1,6 @@
 let countdownDate = new Date("2024-06-02");
 countdownDate.setHours(countdownDate.getHours() + 15)
+countdownDate.setMinutes(countdownDate.getMinutes() + 30)
 
 let timerInterval;
 
@@ -30,14 +31,33 @@ const startCountdown = () => {
     let minutes = Math.floor((difference % (60 * 60)) / 60);
     let seconds = Math.floor(difference % 60);
 
-    daysElem.innerHTML = `${days} `;
-    daysElemCaption.innerHTML = formatTime(days, ['День', 'Дня', 'Дней']);
-    hoursElem.innerHTML = `${hours} `;
-    hoursElemCaption.innerHTML = formatTime(hours, ['Час', 'Часа', 'Часов']);
-    minutesElem.innerHTML = `${minutes} `;
-    minutesElemCaption.innerHTML = formatTime(minutes, ['Минута', 'Минуты', 'Минут']);
-    secondsElem.innerHTML = `${seconds} `;
-    secondsElemCaption.innerHTML = formatTime(seconds, ['Секунда', 'Секунды', 'Секунд']);
+    if (days > 9) {
+        daysElem.innerHTML = `${days} `;
+    } else {
+        daysElem.innerHTML = `0${days} `;
+    }
+    // daysElemCaption.innerHTML = formatTime(days, ['День', 'Дня', 'Дней']);
+
+    if (hours > 9) {
+        hoursElem.innerHTML = `${hours} `;
+    } else {
+        hoursElem.innerHTML = `0${hours} `;
+    }
+    // hoursElemCaption.innerHTML = formatTime(hours, ['Час', 'Часа', 'Часов']);
+
+    if (minutes > 9) {
+        minutesElem.innerHTML = `${minutes} `;
+    } else {
+        minutesElem.innerHTML = `0${minutes} `;
+    }
+    // minutesElemCaption.innerHTML = formatTime(minutes, ['Минута', 'Минуты', 'Минут']);
+
+    if (seconds > 9) {
+        secondsElem.innerHTML = `${seconds} `;
+    } else {
+        secondsElem.innerHTML = `0${seconds} `;
+    }
+    // secondsElemCaption.innerHTML = formatTime(seconds, ['Секунда', 'Секунды', 'Секунд']);
 };
 
 const endCountdown = () => {
