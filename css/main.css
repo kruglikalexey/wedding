@@ -9,7 +9,7 @@
 	--text_paragraph: #0c0c08;
 	--context: #9d7d2b;
 	--timer: #eeddb7;
-	--transition: transform 0.5s cubic-bezier(.1, .1, 0, 1);
+	/*--transition: transform 0.5s cubic-bezier(.1, .1, 0, 1);*/
 	--webkit-transition: -webkit-transform 0.5s cubic-bezier(.1, .1, 0, 1);
 }
 @font-face {
@@ -71,9 +71,9 @@ body {
 }
 .layer__header {
 	z-index: 1;
-	transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+	/*transform: translate3d(0, calc(var(--scrollTop) / 2), 0);*/
 	-webkit-transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
-	transition: var(--transition);
+	/*transition: var(--transition);*/
 	-webkit-transition: var(--webkit-transition);
 	will-change: transform;
 	font-weight: 900;
@@ -119,9 +119,9 @@ body {
 .main-article__header {
 	font-size: calc(var(--index) * 1.8);
 	letter-spacing: calc(var(--index) / 7.5);
-	transform: var(--main-article-transform);
+	/*transform: var(--main-article-transform);*/
 	-webkit-transform: var(--main-article-transform);
-	transition: var(--transition);
+	/*transition: var(--transition);*/
 	-webkit-transition: var(--webkit-transition);
 	will-change: transform;
 }
@@ -130,9 +130,9 @@ body {
 	max-width: calc(var(--index) * 30);
 	font-size: calc(var(--index) * .9);
 	margin-top: calc(var(--index) / 1.25);
-	transform: var(--main-article-transform);
+	/*transform: var(--main-article-transform);*/
 	-webkit-transform: var(--main-article-transform);
-	transition: var(--transition);
+	/*transition: var(--transition);*/
 	-webkit-transition: var(--webkit-transition);
 	will-change: transform;
 }
