@@ -9,11 +9,10 @@
 	font-size: calc(var(--index) * 0.95);
 	margin-left: 20px;
 }
-.timing-body-caption {
+.timing_body_caption {
 	color: var(--context);
 	text-align: center;
 	font-size: calc(var(--index) * 0.75);
-	margin-left: 20px;
 }
 .timing__header {
 	margin-top: calc(var(--index) * 1.0);
