@@ -27,6 +27,14 @@
 	font-size: calc(var(--index) * 1.15);
 	margin-bottom: calc(var(--index) * 1.75);
 }
+.timing-caption {
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	color: var(--context);
+	font-size: calc(var(--index) * 0.95);
+	margin-bottom: calc(var(--index) * 1.75);
+}
 .timing-article {
 	--main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
 	min-height: 100vh;

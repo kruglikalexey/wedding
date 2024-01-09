@@ -5,7 +5,7 @@
 }
 :root {
 	--index: calc(1vw + 1vh);
-	--text: #e7e7e0;
+	--text: #fafafa;
 	--text_paragraph: #0c0c08;
 	--context: #9d7d2b;
 	--timer: #eeddb7;
@@ -60,14 +60,8 @@ body {
 	background-position: center;
 	will-change: transform;
 	z-index: 2;
-	/*transition: var(--transition);*/
-	/*border-radius: 20px;*/
 }
 .layers__base {
-	/*transform: translate3d(0, calc(var(--scrollTop) / 5), 0);*/
-	/*-webkit-transform: translate3d(0, calc(var(--scrollTop) / 5), 0);*/
-	/*transition: var(--transition);*/
-	/*-webkit-transition: var(--webkit-transition);*/
 	z-index: 0;
 }
 .layer__header {
@@ -143,6 +137,10 @@ body {
 footer {
 	height: 300px;
 	width: 100%;
+}
+.phone {
+	font-size: 16px;
+	font-weight: 900;
 }
 p.copyright {
 	width: 100%;
