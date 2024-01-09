@@ -26,7 +26,7 @@ var prevScrolled = new Date().getTime();
 window.onscroll = function() {
 	console.log(prevScrolled)
 	console.log(new Date().getTime())
-	if ((new Date().getTime() - prevScrolled) > 50) {
+	if ((new Date().getTime() - prevScrolled) > 50 || this.scrollY === 0) {
 		// var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 		document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`)
 		prevScrolled = new Date().getTime();
