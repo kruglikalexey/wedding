@@ -9,8 +9,8 @@
 	--text_paragraph: #0c0c08;
 	--context: #9d7d2b;
 	--timer: #eeddb7;
-	--transition: transform 0.5s cubic-bezier(.1, .5, 0, 1);
-	--webkit-transition: -webkit-transform 0.5s cubic-bezier(.1, .5, 0, 1);
+	--transition: transform 0.5s cubic-bezier(.1, .1, 0, 1);
+	--webkit-transition: -webkit-transform 0.5s cubic-bezier(.1, .1, 0, 1);
 }
 @font-face {
 	font-family: raleway_f;
@@ -63,10 +63,10 @@ body {
 	/*border-radius: 20px;*/
 }
 .layers__base {
-	transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
-	-webkit-transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
-	transition: var(--transition);
-	-webkit-transition: var(--webkit-transition);
+	/*transform: translate3d(0, calc(var(--scrollTop) / 5), 0);*/
+	/*-webkit-transform: translate3d(0, calc(var(--scrollTop) / 5), 0);*/
+	/*transition: var(--transition);*/
+	/*-webkit-transition: var(--webkit-transition);*/
 	z-index: 0;
 }
 .layer__header {
