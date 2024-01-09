@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
 });
 
 
-window.addEventListener('scroll', e => {
+window.addEventListener('scrollend', e => {
 	document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`) // Update method
 })
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
