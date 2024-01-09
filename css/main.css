@@ -72,7 +72,7 @@ body {
 	/*transform: translate3d(0, calc(var(--scrollTop) / 2), 0);*/
 	-webkit-transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
 	/*transition: var(--transition);*/
-	-webkit-transition: var(--webkit-transition);
+	/*-webkit-transition: var(--webkit-transition);*/
 	will-change: transform;
 	font-weight: 900;
 	color: var(--text);
