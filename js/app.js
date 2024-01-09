@@ -22,11 +22,16 @@ window.addEventListener("load", () => {
 // 	document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`)
 // })
 
+var prevScrolled = new Date().getTime();
 window.onscroll = function() {
-	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-	document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`)
-	alert(`scrolled ${scrolled}`);
-	console.log(scrollY)
+	console.log(prevScrolled)
+	console.log(new Date().getTime())
+	if ((new Date().getTime() - prevScrolled) > 50) {
+		// var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+		document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`)
+		prevScrolled = new Date().getTime();
+		// console.log(scrollY)
+	}
 }
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
