@@ -16,9 +16,19 @@ window.addEventListener("load", () => {
 	}
 });
 
-window.addEventListener('scrollend', e => {
-		document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`) // Update method
-})
+// window.addEventListener('scrollend', e => {
+// 	console.log("scrollend")
+// 	console.log(scrollY)
+// 	document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`)
+// })
+
+window.onscroll = function() {
+	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+	document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`)
+	alert(`scrolled ${scrolled}`);
+	console.log(scrollY)
+}
+
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 ScrollSmoother.create({
 	wrapper: '.wrapper',
