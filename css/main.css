@@ -115,13 +115,6 @@ body {
 	top: -1px;
 	z-index: 20;
 }
-.main-article__header {
-	font-size: calc(var(--index) * 1.8);
-	letter-spacing: calc(var(--index) / 7.5);
-	-webkit-transform: var(--main-article-transform);
-	-webkit-transition: var(--webkit-transition);
-	will-change: transform;
-}
 .main-article__paragraph {
 	color: var(--text_paragraph);
 	max-width: calc(var(--index) * 30);
