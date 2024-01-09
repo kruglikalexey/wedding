@@ -9,7 +9,7 @@
 	--text_paragraph: #0c0c08;
 	--context: #9d7d2b;
 	--timer: #eeddb7;
-	--webkit-transition: -webkit-transform 1.0s cubic-bezier(.3, .5, 0, 1);
+	--webkit-transition: -webkit-transform 2.0s cubic-bezier(.1, .5, 0, 1);
 }
 @font-face {
 	font-family: raleway_f;
@@ -115,11 +115,24 @@ body {
 	top: -1px;
 	z-index: 20;
 }
+.main-article__header {
+	font-size: calc(var(--index) * 1.8);
+	letter-spacing: calc(var(--index) / 7.5);
+	/*transform: var(--main-article-transform);*/
+	-webkit-transform: var(--main-article-transform);
+	/*transition: var(--transition);*/
+	-webkit-transition: var(--webkit-transition);
+	will-change: transform;
+}
 .main-article__paragraph {
 	color: var(--text_paragraph);
 	max-width: calc(var(--index) * 30);
 	font-size: calc(var(--index) * .9);
 	margin-top: calc(var(--index) / 1.25);
+	/*transform: var(--main-article-transform);*/
+	-webkit-transform: var(--main-article-transform);
+	/*transition: var(--transition);*/
+	-webkit-transition: var(--webkit-transition);
 	will-change: transform;
 }
 .content {
