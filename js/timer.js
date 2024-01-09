@@ -1,5 +1,5 @@
 let countdownDate = new Date("2024-06-02");
-countdownDate.setHours(countdownDate.getHours() + 12)
+countdownDate.setHours(countdownDate.getHours() + 15)
 
 let timerInterval;
 
