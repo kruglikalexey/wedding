@@ -11,8 +11,8 @@
 }
 .timing__header {
 	margin-top: calc(var(--index) * 1.0);
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 25px;
+	margin-right: 25px;
 	text-align: center;
 	font-size: calc(var(--index) * 2.15);
 	letter-spacing: calc(var(--index) / 2.15);
