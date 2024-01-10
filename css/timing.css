@@ -8,11 +8,12 @@
 	text-align: center;
 	font-size: calc(var(--index) * 0.95);
 	margin-left: 20px;
+	border-left: 2px solid var(--context);
 }
 .timing__header {
 	margin-top: calc(var(--index) * 1.0);
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
 	text-align: center;
 	font-size: calc(var(--index) * 2.15);
 	letter-spacing: calc(var(--index) / 2.15);
@@ -49,22 +50,8 @@
 	top: -1px;
 	z-index: 20;
 }
-.timing >li {
-	margin-left: 20px;
-	margin-right: 20px;
-	position: relative;
-}
 .timing>li:before {
 	content: '\25CF';
-	margin-right: 10px;
+	margin-left: 16px;
 	font-size: 20px;
-}
-.timing>li:after {
-	position: absolute;
-	left: 0;
-	top: 0;
-	content: '';
-	border-left: 2px solid var(--context);
-	margin-left: 5px;
-	height: 100%;
 }
