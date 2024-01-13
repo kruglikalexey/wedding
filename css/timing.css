@@ -21,6 +21,7 @@
 	letter-spacing: calc(var(--index) / 2.15);
 	position: relative;
 	font-weight: 900;
+	margin-top: calc(var(--index) / 0.75);
 	color: var(--context);
 }
 .timing-main {
