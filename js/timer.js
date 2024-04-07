@@ -8,13 +8,11 @@ const daysElem = document.getElementById("days"),
     hoursElem = document.getElementById("hours"),
     minutesElem = document.getElementById("minutes"),
     secondsElem = document.getElementById("seconds"),
-    timer = document.getElementById("timer"),
-    daysElemCaption = document.getElementById("days_caption"),
-    hoursElemCaption = document.getElementById("hours_caption"),
-    minutesElemCaption = document.getElementById("minutes_caption"),
-    secondsElemCaption = document.getElementById("seconds_caption");
+    timer = document.getElementById("timer");
 
 const guestElem = document.getElementById("guest")
+const transferElem = document.getElementById("transfer_text")
+const transferTimeElem = document.getElementById("transfer_time")
 
 const startCountdown = () => {
     let now = new Date();
